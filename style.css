@@ -1,0 +1,175 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    margin: 2rem;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.register-btn {
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--violet);
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 7px 10px 3px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-out;
+}
+
+.register-btn:hover {
+    color: #FFFFFF;
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.social-frame {
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: 0.3s ease-out;
+}
+
+svg {
+    transition: 0.3s ease-out;
+}
+
+.social-frame:hover svg {
+    fill: var(--soft-magenta);
+}
+
+.social-frame:hover {
+    border: 1px solid var(--soft-magenta);
+    cursor: pointer;
+}
+
+.social-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.instagram-icon {
+    height: 28px;
+    width: 28px;
+}
+
+.attribution {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 961px) {
+    body {
+        margin: 3rem 5rem 0;
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 30rem;
+        margin-left: 3.5rem;
+    }
+
+    .heading {
+        text-align: left;
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .description {
+        text-align: left;
+        font-weight: 300;
+    }
+
+    .logo {
+        height: 3.5rem;
+    }
+
+    .register-btn {
+        padding: 18px 70px;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .socials {
+        justify-content: flex-end;
+        margin-top: 3rem;
+    }
+
+    .social-frame {
+        height: 40px;
+        width: 40px;
+        margin: 0 10px;
+    }
+
+    .illustration {
+        margin-top: 5rem;
+    }
+}
